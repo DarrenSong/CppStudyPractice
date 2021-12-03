@@ -32,4 +32,5 @@ Boost::filesystem
 #libprotobuf.lib
 #libprotobuf-lite.lib
 #libprotoc.lib
+#${LIBRARY_OUTPUT_PATH}/***.lib
 )
