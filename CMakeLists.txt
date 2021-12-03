@@ -12,7 +12,10 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 #set build sub dir
-set(SUB_DIR_SEQ mutil_thread BoostDemo)
+set(SUB_DIR_SEQ 
+BoostDemo 
+mutil_thread 
+)
 
 foreach(item ${SUB_DIR_SEQ})
     add_subdirectory(${item}) 
