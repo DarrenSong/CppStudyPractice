@@ -6,10 +6,16 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# set exe output path
 #set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/build/bin)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-add_subdirectory(mutil_thread )
+#set build sub dir
+set(SUB_DIR_SEQ mutil_thread BoostDemo)
+
+foreach(item ${SUB_DIR_SEQ})
+    add_subdirectory(${item}) 
+endforeach()
 
 #boost
 #set(BOOST_ROOT "C:/Boost")
