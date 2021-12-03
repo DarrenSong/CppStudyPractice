@@ -12,6 +12,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 #set build sub dir
+# if you do not build some sub folders,just comment them.
 set(SUB_DIR_SEQ 
 BoostDemo 
 mutil_thread 
