@@ -7,7 +7,9 @@ set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #boost
-set(BOOST_ROOT "C:/Boost")
+if(WIN32)
+  set(BOOST_ROOT "C:/Boost")
+endif()
 
 find_package(Boost REQUIRED COMPONENTS 
 filesystem
@@ -21,8 +23,7 @@ filesystem
 #Boost_LIB_VERSION      - 某个库的版本
 
 if(Boost_FOUND)
-	message(STATUS "Boost Include Dir:${Boost_INCLUDE_DIRS}")
-	message( STATUS "Boost_INCLUDE_DIRS = ${Boost_INCLUDE_DIRS}.")
+    message( STATUS "Boost_INCLUDE_DIRS = ${Boost_INCLUDE_DIRS}.")
     message( STATUS "Boost_LIBRARIES = ${Boost_LIBRARIES}.")
     message( STATUS "Boost_LIB_VERSION = ${Boost_LIB_VERSION}.")
 endif()
