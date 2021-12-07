@@ -16,6 +16,7 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 set(SUB_DIR_SEQ 
 BoostDemo 
 mutil_thread 
+smartptr
 )
 
 foreach(item ${SUB_DIR_SEQ})
