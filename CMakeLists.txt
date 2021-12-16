@@ -17,6 +17,7 @@ set(SUB_DIR_SEQ
 BoostDemo 
 mutil_thread 
 smartptr
+memorymgr
 )
 
 foreach(item ${SUB_DIR_SEQ})
