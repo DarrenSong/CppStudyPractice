@@ -1,10 +1,3 @@
-#cmake_minimum_required(VERSION 3.0)
-
-#project(BoostDemo)
-
-#set(CMAKE_CXX_STANDARD 11)
-#set(CMAKE_CXX_EXTENSIONS ON)
-#set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #boost
 if(WIN32)
@@ -31,15 +24,6 @@ endif()
 #set(Boost_LIBRARY_DIR ${BOOST_ROOT}/lib) 
 include_directories(${Boost_INCLUDE_DIRS})
 #link_directories(${Boost_LIBRARY_DIR})
-
-#set(Protobuf_ROOT "C:/app/google/cmake")
-#find_package(Protobuf)
-#if(Protobuf_FOUND)
-#message(STATUS "Protobuf Include Dir:${Protobuf_INCLUDE_DIRS}")
-#endif()
-#include_directories(${Protobuf_INCLUDE_DIRS})
-#include_directories("C:/app/google/include")
-#link_directories("C:/app/google/lib")
 
 add_executable(${PROJECT_NAME} boostdemo.cpp)
 
