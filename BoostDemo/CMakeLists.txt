@@ -1,11 +1,13 @@
 
 #boost
 if(WIN32)
-  set(BOOST_ROOT "C:/Boost")
+  #set(BOOST_ROOT "C:/Boost")
+  set(CMAKE_PREFIX_PATH "C:/libs")
 endif()
 
-find_package(Boost REQUIRED COMPONENTS 
+find_package(Boost 1.82 REQUIRED COMPONENTS 
 filesystem
+thread
 )
 #运行完find以后可以得到以下变量
 #Boost_FOUND            - 如果找到了所需的库就设为true
